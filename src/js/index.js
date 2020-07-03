@@ -1,4 +1,4 @@
-const sampleWeights = [1, 3];
+const sampleWeights = [3, 7];
 let counter = 0;
 
 const measure = (target, sampleWeights) => {
@@ -14,8 +14,16 @@ const measure = (target, sampleWeights) => {
     if (target === sampleWeights[0] + sampleWeights[1]) {
         return true;
     } else {
-        return false;
+        if (target + sampleWeights[0] === sampleWeights[1]) {
+            return true;
+        } else {
+            if (target + sampleWeights[1] === sampleWeights[0]) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 }
 
-// console.log(measure(5, sampleWeights));
+// console.log(measure(4 , sampleWeights)); // Output: true
