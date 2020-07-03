@@ -18,4 +18,4 @@ const measure = (target, sampleWeights) => {
     }
 }
 
-console.log(measure(2, sampleWeights));
+// console.log(measure(5, sampleWeights));
