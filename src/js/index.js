@@ -1,6 +1,6 @@
 let balls = 0;
 
-function cannonBalls(h) {
+const cannonBalls = (h) => {
     if (h >= 0) {
         balls = balls + (h);
         cannonBalls(h-1);
