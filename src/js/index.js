@@ -1,6 +1,7 @@
 let balls = 0;
 
-const cannonBalls = (h) => {
+const cannonBalls = h => {
+
     if (h >= 0) {
         balls = balls + (h);
         cannonBalls(h-1);
@@ -8,6 +9,7 @@ const cannonBalls = (h) => {
         alert(`The number of cannon balls is ${balls}`);
         return balls = 0;
     };
+
 };
 
 // cannonBalls(4); Output: 10
